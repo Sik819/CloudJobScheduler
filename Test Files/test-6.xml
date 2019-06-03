@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config randomSeed="335">
+
+    <servers>
+        <server type="fifa-11" limit="3" bootupTime="45" hourlyRate="0.50" coreCount="2" memory="16000" disk="64000" />
+        <server type="fifa-12" limit="2" bootupTime="45" hourlyRate="1.00" coreCount="4" memory="32000" disk="128000" />
+        <server type="fifa-13" limit="1" bootupTime="45" hourlyRate="2.00" coreCount="8" memory="64000" disk="256000" />
+        <server type="fifa-14" limit="3" bootupTime="30" hourlyRate="0.90" coreCount="4" memory="16000" disk="256000" />
+        <server type="fifa-15" limit="1" bootupTime="30" hourlyRate="3.60" coreCount="16" memory="64000" disk="1024000" />
+        <server type="fifa-16" limit="6" bootupTime="120" hourlyRate="0.40" coreCount="1" memory="16000" disk="16000" />
+        <server type="fifa-17" limit="2" bootupTime="120" hourlyRate="1.60" coreCount="4" memory="64000" disk="64000" />
+        <server type="fifa-18" limit="1" bootupTime="120" hourlyRate="25.60" coreCount="64" memory="4096000" disk="4096000" />
+    </servers>
+
+    <jobs>
+        <job type="beginner" minRunTime="1" maxRunTime="30" populationRate="15" />
+        <job type="amatuer" minRunTime="11" maxRunTime="180" populationRate="35" />
+        <job type="professional" minRunTime="301" maxRunTime="900" populationRate="35" />
+        <job type="legandary" minRunTime="1801" maxRunTime="43200" populationRate="15" />
+    </jobs>
+    
+    <workload type="heavy" minLoad="85" maxLoad="95" />
+    
+    <termination>
+        <condition type="endtime" value="2592000" />
+        <condition type="jobcount" value="256" />
+    </termination>
+    
+</config>
