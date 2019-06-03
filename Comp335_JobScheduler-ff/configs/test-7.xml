@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config randomSeed="335">
+
+    <servers>
+        <server type="WSU" limit="3" bootupTime="30" hourlyRate="2" coreCount="2" memory="8000" disk="64000" />
+        <server type="Macquarie-University" limit="3" bootupTime="30" hourlyRate="3" coreCount="4" memory="16000" disk="128000" />
+        <server type="UTS" limit="3" bootupTime="30" hourlyRate="8" coreCount="8" memory="32000" disk="256000" />
+        <server type="University-of-Sydney" limit="3" bootupTime="30" hourlyRate="16" coreCount="16" memory="64000" disk="512000" />
+        <server type="UNSW" limit="3" bootupTime="30" hourlyRate="32" coreCount="32" memory="128000" disk="1024000" />
+        <server type="University-of-Melbourne" limit="3" bootupTime="30" hourlyRate="64" coreCount="64" memory="256000" disk="2048000" />
+    </servers>
+
+    <jobs>
+        <job type="muntasir" minRunTime="1" maxRunTime="30" populationRate="15" />
+        <job type="jon" minRunTime="11" maxRunTime="180" populationRate="35" />
+        <job type="sikder" minRunTime="301" maxRunTime="900" populationRate="35" />
+        <job type="shabab" minRunTime="1801" maxRunTime="43200" populationRate="15" />
+    </jobs>
+    
+    <workload type="heavy" minLoad="85" maxLoad="95" />
+    
+    <termination>
+        <condition type="endtime" value="2592000" />
+        <condition type="jobcount" value="256" />
+    </termination>
+    
+</config>
